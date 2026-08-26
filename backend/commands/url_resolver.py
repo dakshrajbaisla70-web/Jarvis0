@@ -37,7 +37,7 @@ class URLResolver:
     
     def is_valid_domain(self, text: str) -> bool:
         """Check if text looks like a domain name"""
-        domain_pattern = r'^(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,}$'
+        domain_pattern = r'^(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?\\.)+[a-zA-Z]{2,}$'
         return bool(re.match(domain_pattern, text))
     
     def is_valid_url(self, url: str) -> bool:

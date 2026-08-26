@@ -15,50 +15,50 @@ class IntentDetector:
     # Intent patterns
     PATTERNS = {
         'OPEN_WEBSITE': [
-            r'open\s+([\w.\-]+)',
-            r'([\w.\-]+)\s+khol(?:o|a)?',
-            r'([\w.\-]+)\s+ko\s+khol',
-            r'browse\s+([\w.\-]+)',
-            r'visit\s+([\w.\-]+)',
-            r'go\s+to\s+([\w.\-]+)',
-            r'launch\s+([\w.\-]+)\s+in\s+browser'
+            r'open\\s+([\\w.\\-]+)',
+            r'([\\w.\\-]+)\\s+khol(?:o|a)?',
+            r'([\\w.\\-]+)\\s+ko\\s+khol',
+            r'browse\\s+([\\w.\\-]+)',
+            r'visit\\s+([\\w.\\-]+)',
+            r'go\\s+to\\s+([\\w.\\-]+)',
+            r'launch\\s+([\\w.\\-]+)\\s+in\\s+browser'
         ],
         'OPEN_APPLICATION': [
-            r'open\s+([\w\s]+)(?:\s+application)?',
-            r'launch\s+([\w\s]+)',
-            r'start\s+([\w\s]+)',
-            r'([\w\s]+)\s+(?:chalao|kholo|launch)',
-            r'run\s+([\w\s]+)'
+            r'open\\s+([\\w\\s]+)(?:\\s+application)?',
+            r'launch\\s+([\\w\\s]+)',
+            r'start\\s+([\\w\\s]+)',
+            r'([\\w\\s]+)\\s+(?:chalao|kholo|launch)',
+            r'run\\s+([\\w\\s]+)'
         ],
         'WEB_SEARCH': [
-            r'search\s+([\w]+)\s+(?:for|pe)\s+(.+)',
-            r'([\w]+)\s+pe\s+search\s+karo\s+(.+)',
-            r'google\s+(?:pe|mein)\s+search\s+karo\s+(.+)',
-            r'search\s+(.+)',
-            r'find\s+(.+)',
-            r'look\s+(?:for|up)\s+(.+)'
+            r'search\\s+([\\w]+)\\s+(?:for|pe)\\s+(.+)',
+            r'([\\w]+)\\s+pe\\s+search\\s+karo\\s+(.+)',
+            r'google\\s+(?:pe|mein)\\s+search\\s+karo\\s+(.+)',
+            r'search\\s+(.+)',
+            r'find\\s+(.+)',
+            r'look\\s+(?:for|up)\\s+(.+)'
         ],
         'SYSTEM_COMMAND': [
-            r'(?:what|what\'s|whats)\s+(?:the\s+)?time',
-            r'(?:what|what\'s|whats)\s+(?:the\s+)?date',
-            r'tell\s+me\s+(?:the\s+)?(?:time|date)',
-            r'system\s+status',
-            r'check\s+system',
-            r'run\s+diagnostics'
+            r'(?:what|what\\'s|whats)\\s+(?:the\\s+)?time',
+            r'(?:what|what\\'s|whats)\\s+(?:the\\s+)?date',
+            r'tell\\s+me\\s+(?:the\\s+)?(?:time|date)',
+            r'system\\s+status',
+            r'check\\s+system',
+            r'run\\s+diagnostics'
         ],
         'MEMORY_COMMAND': [
-            r'remember\s+(.+)',
-            r'store\s+(.+)',
-            r'save\s+(?:this|that)(?:\s+to\s+memory)?',
-            r'what\s+(?:do\s+)?you\s+remember',
-            r'show\s+(?:my\s+)?memories',
+            r'remember\\s+(.+)',
+            r'store\\s+(.+)',
+            r'save\\s+(?:this|that)(?:\\s+to\\s+memory)?',
+            r'what\\s+(?:do\\s+)?you\\s+remember',
+            r'show\\s+(?:my\\s+)?memories',
             r'recall'
         ],
         'HELP': [
             r'help',
-            r'(?:what|what\'s)\s+(?:your\s+)?(?:capabilities|features|commands)',
-            r'how\s+(?:can\s+)?(?:you|i)\s+(?:help|assist)',
-            r'what\s+can\s+(?:you|i)\s+do'
+            r'(?:what|what\\'s)\\s+(?:your\\s+)?(?:capabilities|features|commands)',
+            r'how\\s+(?:can\\s+)?(?:you|i)\\s+(?:help|assist)',
+            r'what\\s+can\\s+(?:you|i)\\s+do'
         ]
     }
     
