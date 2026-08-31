@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+transformers
+torch
+accelerate
+peft
+bitsandbytes
+sentence-transformers
+faiss-cpu
